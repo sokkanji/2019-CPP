@@ -15,7 +15,7 @@ export default function DialogModal({ dialogRef }: DialogModalPropsType) {
         <p className="text-[20px] font-[500]">Dialog element Modal Content</p>
         <p>This is a modal example using the dialog element tag.</p>
 
-        <button className="bg-green-300 mt-[10px] p-[5px]" onClick={handleCloseModal}>
+        <button className="bg-blue-300 mt-[10px] p-[5px]" onClick={handleCloseModal}>
           Close
         </button>
       </form>

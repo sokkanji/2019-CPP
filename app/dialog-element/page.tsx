@@ -7,7 +7,7 @@ export default function DialogElementModalPage() {
 
   return (
     <main className="flex flex-col items-center justify-between mt-[50px]">
-      <button className="bg-green-200 p-[5px]" onClick={showModal}>
+      <button className="bg-blue-200 p-[5px]" onClick={showModal}>
         Open Modal
       </button>
       <DialogModal dialogRef={dialogRef} />
