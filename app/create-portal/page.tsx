@@ -15,7 +15,7 @@ export default function CreatePortalModalPage() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between pt-[50px]">
       <button className="bg-green-200 p-[5px]" onClick={handleOpenModal}>
         Open Modal
       </button>

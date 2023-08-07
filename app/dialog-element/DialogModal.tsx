@@ -2,9 +2,10 @@ import { RefObject, useRef } from "react";
 
 type DialogModalPropsType = {
   dialogRef: RefObject<HTMLDialogElement>;
+  children: React.ReactNode;
 };
 
-export default function DialogModal({ dialogRef }: DialogModalPropsType) {
+export default function DialogModal({ children, dialogRef }: DialogModalPropsType) {
   const handleCloseModal = () => {
     dialogRef.current?.close();
   };
@@ -12,9 +13,7 @@ export default function DialogModal({ dialogRef }: DialogModalPropsType) {
   return (
     <dialog ref={dialogRef}>
       <form method="dialog" className="border-[2px] p-[10px]">
-        <p className="text-[20px] font-[500]">Dialog element Modal Content</p>
-        <p>This is a modal example using the dialog element tag.</p>
-
+        {children}
         <button className="bg-blue-300 mt-[10px] p-[5px]" onClick={handleCloseModal}>
           Close
         </button>

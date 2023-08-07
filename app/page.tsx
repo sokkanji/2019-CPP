@@ -9,7 +9,7 @@ export default function Home() {
         </div>
       </Link>
       <Link href={"/dialog-element"}>
-        <div className="w-[300px] h-[100px] bg-blue-200 flex items-center justify-center text-[20px] font-[600]">
+        <div className="w-[300px] h-[80px] bg-blue-200 flex items-center justify-center text-[20px] font-[600]">
           Modal using dialog element
         </div>
       </Link>
